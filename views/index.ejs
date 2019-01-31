@@ -138,7 +138,7 @@
 
     <!-- PAGE FOOTER SECTION -->
     <!-- Footer -->
-    
+
   </section>
 
   <!-- ============================================================================= -->
@@ -418,13 +418,19 @@
             var dealLink = dealInfo.url;
             var dealImg = dealInfo.image_url;
             // Create an element with the info
-            var div = $("<div style='border: 5px solid white; margin: 5px 0; height: 200px; overflow: hidden' class='card-panel teal white-text col s10 m6 offset-s1 offset-2'><a class='valign-wrapper' href='" + dealLink + "'><img src=" + dealImg + " class='col m6' style='padding: 10px; height: 200px; width: 200px;'/><span class='col m6 white-text' style='text-decoration: none;'>" + dealTitle + "</span></a></div>");
+            // <a class='btn-floating halfway-fab waves-effect waves-light teal'><i class='material-icons'>add</i></a>
+            var div = $("<div class='col s12 m6'><div class='card'><div class='card-img'><img src='" + dealImg + "'></div><span class='card-title'>Card Title</span> <div class='card-content'><p>" + dealInfo + "</p></div></div></div>");
             // Push the deal info to the deals Div
             $("#deals").append(div);
           })
         })
       })
     };
+
+
+
+
+
 
     // When the user clicks on the "inlude button in a transaction"
     // The transaction will be added to their discretionary spending
@@ -436,7 +442,7 @@
       // If the spend categories array does not include the new category, add it
       // Then render the coupons
       newCatArr.forEach(cat => {
-        if (!spendCats.includes(cat)){
+        if (!spendCats.includes(cat)) {
           spendCats.push(cat);
           renderCoupons(spendCats);
         }
@@ -454,7 +460,7 @@
       $("#set-transactions-card").fadeOut();
       // Fade in the card with budget meter
       $("#budget-card").fadeIn();
-   
+
 
       // When a user has signed in with both Firebase and Plaid, user info will be stored in firebase
       // The user info will be stored in an object under the user's ID
