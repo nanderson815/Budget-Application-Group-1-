@@ -414,12 +414,13 @@
           // For each deal, display the info
           catDeals.forEach(dealObj => {
             var dealInfo = dealObj.deal;
-            var dealTitle = dealInfo.short_title;
+            console.log(dealInfo);
+            var dealTitle = dealInfo.merchant.name;
             var dealLink = dealInfo.url;
             var dealImg = dealInfo.image_url;
             // Create an element with the info
             // <a class='btn-floating halfway-fab waves-effect waves-light teal'><i class='material-icons'>add</i></a>
-            var div = $("<div class='col s12 m6'><div class='card'><div class='card-img'><img src='" + dealImg + "'></div><span class='card-title'>Card Title</span> <div class='card-content'><p>" + dealInfo + "</p></div></div></div>");
+            var div = $("<div class='col s12 m4'><div class='card'><div class='card-img'><img class='dealImg'src='" + dealImg + "'></div><div class='card-content'><span class='card-title'>" + dealTitle + "</span><p>" + dealInfo.short_title + "</p></div></div></div>");
             // Push the deal info to the deals Div
             $("#deals").append(div);
           })
