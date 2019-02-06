@@ -257,3 +257,12 @@ Hide things
 .card-img{
   overflow-x: hidden;
 }
+
+.card{
+  min-height: 350px;
+}
+
+
+.card-content {
+    padding: 15px !important;
+}
