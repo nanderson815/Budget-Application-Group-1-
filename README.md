@@ -1,5 +1,4 @@
-# ClassPractice
+# Pail - Simple Budget Application
+### Pail makes it easy to make purchasing decisions. View the live demo here (user: user_good pass: pass_good): https://fathomless-stream-39221.herokuapp.com/
 
-To Change the html: go through index.ejs. this is an embedded javascript template the renders from the server.
-
-to change the style: go to public/style.css
+####Applicaiton Concept
