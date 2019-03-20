@@ -575,10 +575,10 @@
         budgetGraph.height(400);
       }
 
-      if (spentMoney >= 0) {
+      if (-spentMoney >= 0) {
         budgetSpent.append($("<p id= 'money-text'>").text('($' + spentMoney + ')'));
       } else {
-        budgetSpent.append($("<p id= 'money-text'>").text('Boi you broke AF'))
+        budgetSpent.append($("<p id= 'money-text'>").text('No budget remaining.'))
       }
 
       budgetGraph.append(budgetSpent);
