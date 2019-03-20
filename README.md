@@ -10,3 +10,12 @@
 * Simplify budgeting by sorting expenses into two primary categories: Recurring Expenses (Rent, Mortgage, Car Payment, Groceries, etc.) and Discretionary Income (Bars, Shopping)
 * Allow users to track their discretionary spending at a glance and make informed purchases
 * Track merchant category codes, and push coupons to users for spending categories for which they spend the most
+
+
+#### Technologies Used
+* HTML, CSS, JavaScript, JQuery
+* Node.js - Backend functionality
+* Materialize Framework -  Front end material design
+* Firebase – Authentication and Realtime Database
+* Plaid API – Bank account integration
+* Discount API – Coupon integration 
